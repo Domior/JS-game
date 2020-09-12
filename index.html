@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>JS Game</title>
+</head>
+<body>
+  <div class="block">
+    <div class="block_header">
+      <h1 id="time_header">Duration of game: <span id="time">5.0</span></h1>
+      <h1 id="result_header" class="hidden">Your score: <span id="result"></span></h1>
+    </div>
+    <div class="block_content">
+      <button class="block_content_button" id="block_content_button_start">Start</button>
+      <div class="block_content_game" id="block_content_game"></div>
+    </div>
+    <div class="block_footer">
+      <div class="block_footer_input">
+        <label for="game-time">Duration, (s)</label>
+        <input type="number" id="game-time" min="5" step="1" value="5">
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
